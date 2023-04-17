@@ -49,3 +49,15 @@ string Method4(int count, string text)
 }
 string res = Method4(10, "asdf");
 System.Console.WriteLine(res);
+
+string Method4_1(int count, string text)
+{
+    string result = string.Empty;           
+    for(int i = 0; i < count; i++)          //в строке for пишется инициализация счетчика(int i = 0;), проверка условия(i < count) и увиличение счетчика(i++)
+    {
+        result = result + text;
+    }
+    return result;
+}
+string res1 = Method4_1(10, "asdf");
+System.Console.WriteLine(res);
